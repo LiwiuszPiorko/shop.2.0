@@ -1,0 +1,154 @@
+.recommended{
+    width: 100%;
+    height: 200vh;
+    @include centerDisplay;
+    flex-direction: column;
+    background-color: black;
+    @media(orientation:portrait){
+        height: 400vh;
+    }
+    .recommended-title{
+        width: 90%;
+        height: 5%;
+        @include centerDisplay;
+        font-family: $mainFont;
+        font-size: 2vw;
+        color: white;
+        background-color: rgba($color: $mainColor, $alpha: 0.5);
+        -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        @media(orientation:portrait){
+            height: 2.5%;
+        }
+    }
+    .recommended__items-wrapper{
+        width: 90%;
+        height: 90%;
+        @include commonDisplay;
+        flex-wrap: wrap;
+        .items-wrapper__item{
+            width: 21%;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 5px solid rgba($color: $mainColor, $alpha: .6);
+            border-right: 1px solid rgba($color: $mainColor, $alpha: .6);
+            @media(orientation:portrait){
+                width: 40%;
+                height: 20%;
+            }
+            &:nth-child(1){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/woman-5563792_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(2){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-wellington-cunha-2489986.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(3){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-nappy-1771383.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(4){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/bikini-885382_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(5){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/girl-2387077_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(6){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/people-2558615_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(7){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-vova-krasilnikov-2726161.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(8){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/makeup-3713063_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            .item__description{
+                width: 100%;
+                height: 15%;
+                @include commonDisplay;
+                flex-direction: column;
+                font-family: $additionalFont;
+                font-size: .8vw;
+                color: white;
+                .description__name{
+                    width: 100%;
+                    height: 50%;
+                    @include centerDisplay;
+                    @media(orientation:portrait){
+                        font-size: 2.5vw;
+                    }
+                }
+                .description__price{
+                    width: 100%;
+                    height: 50%;
+                    @include centerDisplay;
+                    @media(orientation:portrait){
+                        font-size: 2vw;
+                    }
+                }
+            }
+            .item__buttons{
+                width: 100%;
+                height: 15%;
+                @include commonDisplay;     
+                .buttons__cart-button{
+                    width: 40%;
+                    height: 40%;
+                    @include centerDisplay;
+                    font-family: $mainFont;
+                    font-size: 1vw;
+                    color: rgba($color: $mainColor, $alpha: .6);
+                    text-decoration: none;
+                }
+                .buttons__item-view-button{
+                    width: 40%;
+                    height: 40%;
+                    @include centerDisplay;
+                    font-family: $mainFont;
+                    font-size: 2vw;
+                    color: $additionalColor;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,482 @@
+.shop{
+    width: 100%;
+    height: 200vh;
+    @include centerDisplay;
+    flex-direction: column;
+    background-color: black;
+    .shop-title{
+        width: 90%;
+        height: 5%;
+        @include centerDisplay;
+        font-family: $mainFont;
+        font-size: 2vw;
+        color: white;
+        background-color: rgba($color: $mainColor, $alpha: 0.5);
+        -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+    .shop__sections{
+        width: 90%;
+        height: 90%;
+        @include centerDisplay;
+        @media(orientation:portrait){
+            width: 100%;
+        }
+        .sections__section-container:nth-child(1){
+            width: 20%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            @media(orientation:portrait){
+                width: 30%;
+            }
+            .section-container__section:nth-child(1){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/girl-1545855_1920.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: 5px -5px 15px 5px #000000; 
+                        box-shadow: 5px -5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    top: 20%;
+                    left: 0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    transform-origin:left;
+                    transform: rotate(90deg);
+                    background-color: rgba($color: $mainColor, $alpha: .7);
+                    border-bottom: 2px solid white;
+                    border-right: 2px solid white;
+                    @media(orientation:portrait){
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    text-decoration: none;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                   
+                    }
+                }
+            }
+            .section-container__section:nth-child(2){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-bia-sousa-2603391.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+                        box-shadow: 5px 5px 15px 5px #000000;                
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    top: 20%;
+                    left: 0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    background-color: rgba($color: $additionalColor, $alpha: .7);
+                    border-bottom: 4px solid white;
+                    @media(orientation:portrait){
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    text-decoration: none;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    
+                    }
+                }
+            }
+            .section-container__section:nth-child(3){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-godisable-jacob-1253408.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: -5px -5px 15px 5px #000000; 
+                        box-shadow: -5px -5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    bottom: -10%;
+                    right: 5%;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    background-color: rgba($color: $mainColor, $alpha: .7);
+                    border-bottom: 2px solid white;
+                    border-right: 2px solid white;
+                    @media(orientation:portrait){
+                        bottom: -5%;
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    text-decoration: none;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }
+            }
+        }
+        .sections__section-container:nth-child(2){
+            width: 20%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            @media(orientation:portrait){
+                width: 30%;
+            }
+            .section-container__section:nth-child(1){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-jansel-ferma-2085118.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: -5px 5px 15px 5px #000000; 
+                        box-shadow: -5px 5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    top: -10%;
+                    right: 0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    background-color: rgba($color: $additionalColor, $alpha: .7);
+                    border-top: 2px solid white;
+                    border-left: 2px solid white;
+                    @media(orientation:portrait){
+                        top: -5%;
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }
+            }
+            .section-container__section:nth-child(2){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-daria-rem-3286126.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: -5px 5px 15px 5px #000000; 
+                        box-shadow: -5px 5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    top: 60%;
+                    right: 0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    background-color: rgba($color: $mainColor, $alpha: .7);
+                    border-left: 4px solid white;
+                    @media(orientation:portrait){
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }               
+            }
+            .section-container__section:nth-child(3){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-nappy-2648203.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: 5px -5px 15px 5px #000000; 
+                        box-shadow: 5px -5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    background-color: rgba($color: $additionalColor, $alpha: .7);
+                    border-top: 4px solid white;
+                    @media(orientation:portrait){
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }
+            }
+        }
+        .sections__section-container:nth-child(3){
+            width: 20%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            justify-content:center;
+            @media(orientation:portrait){
+                width: 30%;
+            }
+            .section-container__section:nth-child(1){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-danielle-pilon-2632670.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+                        box-shadow: 5px 5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    top: 20%;
+                    right:0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    transform-origin:right;
+                    transform: rotate(90deg);
+                    background-color: rgba($color: $mainColor, $alpha: .7);
+                    border-top: 2px solid white;
+                    border-right: 2px solid white;
+                    @media(orientation:portrait){
+                        top: 10%;
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }
+            }
+            .section-container__section:nth-child(2){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-gabriela-pereira-1844138.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: -5px -5px 15px 5px #000000; 
+                        box-shadow: -5px -5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    background-color: rgba($color: $additionalColor, $alpha: .7);
+                    border-top: 2px solid white;
+                    border-right: 2px solid white;
+                    @media(orientation:portrait){
+                        left: 20%;
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }
+            }
+            .section-container__section:nth-child(3){
+                width: 100%;
+                height: 30%;
+                background-image: url(../img/pexels-evg-culture-1191091.jpg);
+                @include imagePosition;
+                position: relative;
+                &:hover{
+                    -webkit-box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+                    box-shadow: inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+                    h1{
+                        -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+                        box-shadow: 5px 5px 15px 5px #000000;
+                    }
+                }
+                h1{
+                    padding: .2em;
+                    position: absolute;
+                    bottom: 20%;
+                    right:0;
+                    font-family: $mainFont;
+                    font-size: 2.5vw;
+                    color: white;
+                    transform-origin:right;
+                    transform: rotate(90deg);
+                    background-color: rgba($color: $mainColor, $alpha: .7);
+                    border-top: 2px solid white;
+                    border-left: 2px solid white;
+                    @media(orientation:portrait){
+                        font-size: 5vw;;
+                    }
+                }
+                a{
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    @include centerDisplay;
+                    opacity: 0;
+                    transition: 1s;
+                    &:hover{
+                        opacity: 1;
+                    }
+                    i{
+                        @include shopSectionLink;
+                    }
+                }
+            }
+        }
+    }
+}
