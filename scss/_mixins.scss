@@ -28,3 +28,16 @@
     border-bottom: 5px solid rgba($color: $mainColor, $alpha: .6);
     border-right: 1px solid rgba($color: $mainColor, $alpha: .6);
 }
+@mixin shopSectionFooter {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    h1{
+        font-family: $additionalFont;
+        font-size: .7vw;
+        color: white;
+    }
+}
