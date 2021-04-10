@@ -1,0 +1,231 @@
+.header-undies{
+    @include sectionSize;
+    background-image: url(../img/pexels-darcy-delia-950758.jpg);
+    @include imagePosition;
+    @media(orientation:portrait){
+        height: 60vh;
+       background-position: left;
+    }
+    .header-undies__menu{
+        width: 50%;
+        height: 10vh;
+        @include commonDisplay;
+        position: absolute;
+        top: 0;
+        left: 0;
+        a{
+            font-family:  $mainFont;
+            font-size: 2vw;
+            color: white;
+            text-decoration: none;
+        }
+    }
+    .header-undies__userUI{
+        width: 15%;
+        height: 10vh;
+        @include commonDisplay;
+        position: absolute;
+        top: 0;
+        right: 0;
+        a{
+            font-size: 2.5vw;
+            color: rgba(rgb(255, 0, 170),.6);
+        }
+    }
+    .header-undies__info{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: end;
+        overflow: hidden;
+        // background: rgb(255,255,255);
+        // background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 75%, rgba(0,0,0,1) 100%);
+        .info__name{
+            width: 50%;
+            height: 15%;
+            @include centerDisplay;
+            font-family:  $mainFont;
+            font-size: 5vw;
+            color: white;
+            transform: rotate(-6deg);
+            text-shadow: 0 0 5px black, 0 0 10px black, 0 0 15px black, 0 0 20px rgb(224, 224, 224), 0 0 30px rgb(248, 248, 248), 0 0 40px rgb(255, 255, 255), 0 0 55px rgb(255, 255, 255), 0 0 75px rgb(255, 255, 255);
+            @media(orientation:portrait) {
+                width: 70%;
+                font-size: 7vw;
+            }
+        }
+        .info__info-text{
+            width: 50%;
+            height: 30%;
+            margin-right: 1em;
+            padding: .5em;
+            @include centerDisplay;
+            font-family:  $mainFont;
+            font-size: 2vw;
+            color: white;
+            transform: rotate(-6deg);
+            text-align: justify;
+            background-color: rgba($color: rgb(255, 0, 170), $alpha: 0.5);
+            -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+            box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+            @media(orientation:portrait){
+                width: 70%;
+                height: 25%;
+                font-size: 3.5vw;
+            }
+        }
+    }
+}
+.recommended-underwear{
+    width: 100%;
+    height: 200vh;
+    @include centerDisplay;
+    flex-direction: column;
+    background-color: black;
+    @media(orientation:portrait){
+        height: 400vh;
+    }
+    .recommended-underwear__title{
+        width: 90%;
+        height: 5%;
+        @include centerDisplay;
+        font-family: $mainFont;
+        font-size: 2vw;
+        color: white;
+        background-color: rgba(rgba(rgb(255, 0, 170),.6),.5);
+        -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+        box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        @media(orientation:portrait){
+            height: 2.5%;
+        }
+    }
+    .recommended-underwear__items-wrapper{
+        width: 90%;
+        height: 90%;
+        @include commonDisplay;
+        flex-wrap: wrap;
+        .items-wrapper__item{
+         @include itemLandscape;
+         border-bottom: 5px solid rgba($color:rgb(255, 0, 170) , $alpha: .6);
+         border-right: 1px solid rgba($color: rgb(255, 0, 170), $alpha: .6);
+            @media(orientation:portrait){
+                width: 40%;
+                height: 20%;
+            }
+            &:nth-child(1){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/boudoir-4135118_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(2){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/girl-4285770_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(3){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-allan-franca-carmo-3632905.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(4){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-chalo-garcia-4027813.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(5){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-danielle-pilon-2496029.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(6){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/people-2558615_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(7){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/pexels-vova-krasilnikov-2726161.jpg);
+                    @include imagePosition;
+                }
+            }
+            &:nth-child(8){
+                .item__image{
+                    width: 100%;
+                    height: 70%;
+                    background-image: url(../img/makeup-3713063_1920.jpg);
+                    @include imagePosition;
+                }
+            }
+            .item__description{
+                width: 100%;
+                height: 15%;
+                @include commonDisplay;
+                flex-direction: column;
+                font-family: $additionalFont;
+                font-size: .8vw;
+                color: white;
+                .description__name{
+                    width: 100%;
+                    height: 50%;
+                    @include centerDisplay;
+                    @media(orientation:portrait){
+                        font-size: 2.5vw;
+                    }
+                }
+                .description__price{
+                    width: 100%;
+                    height: 50%;
+                    @include centerDisplay;
+                    @media(orientation:portrait){
+                        font-size: 2vw;
+                    }
+                }
+            }
+            .item__buttons{
+                width: 100%;
+                height: 15%;
+                @include commonDisplay;     
+                .buttons__cart-button{
+                    width: 40%;
+                    height: 40%;
+                    @include centerDisplay;
+                    font-family: $mainFont;
+                    font-size: 1vw;
+                    color: rgba($color: rgb(255, 0, 170), $alpha: .6);
+                    text-decoration: none;
+                }
+                .buttons__item-view-button{
+                    width: 40%;
+                    height: 40%;
+                    @include centerDisplay;
+                    font-family: $mainFont;
+                    font-size: 2vw;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
