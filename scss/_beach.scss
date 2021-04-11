@@ -1,12 +1,13 @@
-.header-undies{
+.header-beach{
     @include sectionSize;
-    background-image: url(../img/pexels-darcy-delia-950758.jpg);
-    @include imagePosition;
+    background-image: url(../img/zdjęcie.1.jpg);
+    background-size: cover;
+    background-position: top;
     @media(orientation:portrait){
         height: 60vh;
-        // background-position: left;
+        background-position: left;
     }
-    .header-undies__menu{
+    .header-beach__menu{
         width: 50%;
         height: 10vh;
         @include commonDisplay;
@@ -20,11 +21,11 @@
             text-decoration: none;
             transition: .7s;
             &:hover{
-                color:$undiesSectionMainColor;
+                color:orangered;
             }
         }
     }
-    .header-undies__userUI{
+    .header-beach__userUI{
         width: 15%;
         height: 10vh;
         @include commonDisplay;
@@ -33,7 +34,7 @@
         right: 0;
         a{
             font-size: 2.5vw;
-            color: rgba($undiesSectionMainColor,.6);
+            color: rgba(orangered,.7);
         }
     }
     .header-undies__info{
@@ -69,7 +70,7 @@
             color: white;
             transform: rotate(-6deg);
             text-align: justify;
-            background-color: rgba($color: $undiesSectionMainColor, $alpha: 0.5);
+            background-color: rgba(orangered, $alpha: 0.7);
             -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
             box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
             @media(orientation:portrait){
@@ -80,7 +81,7 @@
         }
     }
 }
-.recommended-underwear{
+.recommended-beach{
     width: 100%;
     height: 200vh;
     @include centerDisplay;
@@ -89,29 +90,29 @@
     @media(orientation:portrait){
         height: 400vh;
     }
-    .recommended-underwear__title{
+    .recommended-beach__title{
         width: 90%;
         height: 5%;
         @include centerDisplay;
         font-family: $mainFont;
         font-size: 2vw;
         color: white;
-        background-color: rgba($undiesSectionMainColor,.5);
+        background-color: rgba(orangered,.7);
         -webkit-box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
         box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
         @media(orientation:portrait){
             height: 2.5%;
         }
     }
-    .recommended-underwear__items-wrapper{
+    .recommended-beach__items-wrapper{
         width: 90%;
         height: 90%;
         @include commonDisplay;
         flex-wrap: wrap;
         .items-wrapper__item{
          @include itemLandscape;
-         border-bottom: 5px solid rgba($undiesSectionMainColor ,.6);
-         border-right: 1px solid rgba($undiesSectionMainColor ,.6);
+         border-bottom: 5px solid rgba(orangered ,.7);
+         border-right: 1px solid rgba(orangered ,.7);
             @media(orientation:portrait){
                 width: 40%;
                 height: 20%;
@@ -120,7 +121,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/boudoir-4135118_1920.jpg);
+                    background-image: url(../img/pexels-rodrigo-amatuzzi-4291329.jpg);
                     @include imagePosition;
                 }
             }
@@ -128,7 +129,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/girl-4285770_1920.jpg);
+                    background-image: url(../img/pexels-dalila-dalprat-1930621.jpg);
                     @include imagePosition;
                 }
             }
@@ -136,7 +137,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/pexels-allan-franca-carmo-3632905.jpg);
+                    background-image: url(../img/pexels-helzio-pires-cupertino-1855885.jpg);
                     @include imagePosition;
                 }
             }
@@ -144,7 +145,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/pexels-chalo-garcia-4027813.jpg);
+                    background-image: url(../img/pexels-anderson-guerra-1146505.jpg);
                     @include imagePosition;
                 }
             }
@@ -152,7 +153,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/pexels-danielle-pilon-2496029.jpg);
+                    background-image: url(../img/people-2562422_1920.jpg);
                     @include imagePosition;
                 }
             }
@@ -160,7 +161,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/pexels-jo-kassis-4741270.jpg);
+                    background-image: url(../img/pexels-lola-russian-2205647.jpg);
                     @include imagePosition;
                 }
             }
@@ -168,7 +169,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/pexels-danielle-pilon-2495905.jpg);
+                    background-image: url(../img/pexels-godisable-jacob-860508.jpg);
                     @include imagePosition;
                 }
             }
@@ -176,7 +177,7 @@
                 .item__image{
                     width: 100%;
                     height: 70%;
-                    background-image: url(../img/pexels-ivan-babydov-5395171.jpg);
+                    background-image: url(../img/pexels-gustavo-almeida-3028860.jpg);
                     @include imagePosition;
                 }
             }
@@ -215,7 +216,7 @@
                     @include centerDisplay;
                     font-family: $mainFont;
                     font-size: 1vw;
-                    color: rgba($undiesSectionMainColor ,.6);
+                    color: rgba(orangered ,.6);
                     text-decoration: none;
                 }
                 .buttons__item-view-button{
