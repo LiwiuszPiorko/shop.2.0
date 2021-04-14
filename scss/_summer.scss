@@ -1,11 +1,9 @@
 .header-summer{
     @include sectionSize;
     background-image: url(../img/zdjecie.6.jpg);
-    background-size: cover;
-    background-position: top;
+    @include imagePosition;
     @media(orientation:portrait){
         height: 60vh;
-        background-position: left;
     }
     .header-summer__menu{
         width: 50%;
